@@ -1,0 +1,197 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+
+margin:0;
+padding: 0;
+
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+#logo a:hover{
+	color:#b5838d;
+}
+
+#logo{
+	display: flex;
+	align-items: center;
+	float:left;
+}
+
+#logo img{
+	width:70px;
+	align-items: center;
+	margin-right: 5px;
+}
+
+#logo span{
+	font-family: 'Allura', cursive;
+	font-weight: bold;
+	font-size: 180%;
+}
+.navbar ul {
+  list-style:none;
+}
+.navbar ul li{
+  display:inline-block;
+  line-height:45px;
+  margin-left:14%;
+  
+}
+.navbar li a{
+  text-decoration:none;
+  color:#000000;
+}
+.navbar-toggle{
+  display:none;
+}
+
+.navbar ul li :hover{
+	color:#457b9d;
+	text-decoration: underline;
+	font-family: 'Rowdies', cursive;
+}
+.moveup{
+	position: fixed;
+	right:0;
+	bottom: 0;
+	font-size: 200%;
+	opacity: 0;
+	transition:all 0.4s;
+	pointer-events: none; /*won't react to the pointer event*/
+}
+.moveup.scrollup{
+  pointer-events: auto;
+  opacity:1;
+}
+
+footer{
+background:linear-gradient(#FFE5D9,#D8E2DC);
+padding: 15px;
+
+}
+.foot{
+	display: flex;
+	justify-content: space-between;
+}
+.foot1{
+	padding: 2%;
+}
+
+.foot h1{
+	font-size: 190%;
+	font-family: 'Allura', cursive;
+}
+.foot1 a{
+	font-size: 150%;
+	margin: 5px;
+}
+.foot1 a:hover{
+	color: #0000ff;
+}
+.foot p{
+	font-size: 120%;
+}
+/*----------------------------------------*/
+
+.main {
+	clear: left;
+	height: 110vh;
+	background-image: linear-gradient(rgba(0,0,0,.5), rgba(255,255,255,.5)),url("../image/back1ani.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center center;
+}
+
+.container{
+	width: 30rem;
+    height: 39rem;
+    margin-left:auto;
+    margin-right: auto;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+}
+.container h2{
+	font-family: 'Allura', cursive;
+	font-weight: bold;
+	font-size: 250%;
+	text-align: center;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 20% 80%;
+	align-items: center;
+}
+.grid div{
+	font-size: 150%;
+	margin:2%;
+}
+.icon{
+	text-align: center;
+}
+#mail a:hover{
+	color: blue;
+}
+#address a:hover{
+	color: red;
+}
+@media screen and (max-width:1076px){
+  
+ ul {
+    display:none;
+  }
+  .navbar-toggle{
+    display: inline;
+    line-height:50px;
+    float:right;
+    margin-right:20px;
+  }
+
+  .list.responsive {
+  	display: table; 
+  	margin-left: auto;
+    margin-right: auto;
+    font-size: 140%;
+  	clear:left;
+  	text-align:center;
+
+  }
+  #toggle:hover{
+  	color: red;
+  }
+ 
+  #logo img{
+  	display: block;
+  	margin-right: auto;
+  	margin-left: auto;
+  }
+}
+@media screen and (max-width: 780px)
+{
+.foot{
+	flex-direction: column;
+ }
+
+}
+@media screen and (max-width:768px){
+	.container{
+		width: auto;
+	}
+	.grid{
+		display: grid;
+	   grid-template-columns:100%;
+	   align-items: center;
+	}
+   
+   .grid div{
+   	text-align: center;
+   	 font-size: 140%;
+   }
+}
